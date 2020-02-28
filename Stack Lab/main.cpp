@@ -7,14 +7,13 @@
  structure (ie using pointers).
 */
 
-#include "StackHeader.h"
+#include "Stack.h"
 
 
 #include <iostream>
 
 int main()
 {
-
     Stack list;
     if(list.IsFull())
     {
@@ -24,12 +23,16 @@ int main()
     {
         std::cout<<"Empty"<<std::endl;
     }
+
     list.Push(4);
     list.Push(34);
     list.Push(99);
     list.Pop();
     list.Pop();
+    list.Pop();
+    list.Pop();
     std::cout<<list.Top()<<std::endl;
-
     return 0;
+    // Some code that I was using to test what pop
+    //would do if their was nothing to pop
 }
