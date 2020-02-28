@@ -18,7 +18,7 @@ Stack::~Stack()
 {
     while(!IsEmpty())
     {
-       void pop();
+       Pop();
     }
     p_top = nullptr;
 }

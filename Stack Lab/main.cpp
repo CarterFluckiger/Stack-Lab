@@ -23,12 +23,9 @@ int main()
     {
         std::cout<<"Empty"<<std::endl;
     }
-
     list.Push(4);
     list.Push(34);
     list.Push(99);
-    list.Pop();
-    list.Pop();
     list.Pop();
     list.Pop();
     std::cout<<list.Top()<<std::endl;
